@@ -1,0 +1,3 @@
+INGATLANOK(ID,ar,telepules,szobaszam,allapot,alapterulet)
+INGATLANOK:
+	1. ID(autoincrement)//int(11)
