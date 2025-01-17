@@ -1,3 +1,8 @@
-INGATLANOK(ID,ar,telepules,szobaszam,allapot,alapterulet)
+INGATLANOK(ID,ar,telepules,szobaszam,leiras,alapterulet)
 INGATLANOK:
 	1. ID(autoincrement)//int(11)
+	2. ar(int(11),NOT NULL)
+	3. telepules(varchar(255),NOT NULL)
+	4. szobaszam(varchar(5) NOT NULL)
+	5. leiras(varchar(255))
+	6. alapterulet(int(7))
