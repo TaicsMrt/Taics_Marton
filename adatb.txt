@@ -1,4 +1,4 @@
-INGATLANOK(ID,ar,telepules,szobaszam,leiras,alapterulet)
+INGATLANOK(ID,ar,telepules,szobaszam,leiras,alapterulet, orszagID, kategoriaID)
 INGATLANOK:
 	1. ID(autoincrement)//int(11)
 	2. ar(int(11),NOT NULL)
@@ -6,6 +6,8 @@ INGATLANOK:
 	4. szobaszam(varchar(5) NOT NULL)
 	5. leiras(varchar(255))
 	6. alapterulet(int(11))
+	7. orszagID(char(3))//FK kapcsolat az ORSZAG nemzetkoziazonosito-val	
+	8. kategoriaID(int(11))//FK kategoriákhoz
 
 
 ORSZAG(nemzetkoziazonosito, orszagnev)
