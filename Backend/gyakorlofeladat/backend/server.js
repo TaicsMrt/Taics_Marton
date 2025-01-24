@@ -15,6 +15,21 @@ const db = mysql.createConnection({
     password: "",
     database: "kozutak"
 });
-app.get("/", (req, res) =>(
-    res.send("Express is running")
-))
+
+
+app.get("/", (req, res) =>{
+    res.send("Fut a backend");
+})
+
+
+app.get("/user", (req, res) => {
+    const sql = "SELECT * FROM `regiok`";
+    db.query(sql, (err, result) =>{
+        if(err) return res.json(err);
+        return res.json(result)
+    })
+})
+
+app.listen(3001, () => {
+    console.log("Server is running on port 3001");
+});
